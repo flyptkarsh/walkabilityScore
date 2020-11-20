@@ -1,0 +1,55 @@
+
+<h1>Walkability Score</h1>
+<div id='invalid-address' class="alert alert-danger" role="alert">
+  Invalid Address
+</div>
+<div class="input-group mb-3">
+  <input type="text" id="address" class="form-control" placeholder="Enter an address here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="get-score">Get Score</button>
+  </div>
+</div>
+
+<div id='results' class='row'>
+  <div class="col-md-12">
+    <h2>Overall Score <span id='score' class="badge badge-primary"></span></h2>
+    <p>Score is based on how many places are within one mile.</p>
+    <div id='static-map'></div>
+  </div>
+  <div class="col-md-4">
+    <h3>Nearby Retail <span id='shops' class="badge badge-primary"></span></h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+        </tr>
+      </thead>
+      <tbody id='shops-list'>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-4">
+    <h3>Nearby Food <span id='food' class="badge badge-primary"></span></h3>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+        </tr>
+      </thead>
+      <tbody id='foods-list'>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-4">
+    <h3>Nearby Transit<span id='transit' class="badge badge-primary"></h3>
+      <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+        </tr>
+      </thead>
+      <tbody id='transit-list'>
+      </tbody>
+    </table>
+  </div>
+</div>
